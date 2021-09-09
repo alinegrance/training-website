@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form inputs trial</title>
+  </head>
+  <body>
+    <h2>Input trials</h2>
+
+    <h3>Datalist</h3>
+    <label for="colors-choice">Choose a color</label>
+    <input list="colors-list" id="colors-choice" name="colors-choice" />
+
+    <datalist id="colors-list">
+      <option value="green"></option>
+      <option value="blue"></option>
+      <option value="orange"></option>
+      <option value="yellow"></option>
+      <option value="red"></option>
+      <option value="black"></option>
+      <option value="white"></option>
+    </datalist>
+    <br />
+
+    <h3>Fieldset</h3>
+    <form>
+      <fieldset>
+        <legend>Choose your favorite game</legend>
+
+        <input type="radio" id="genshin" name="game" />
+        <label for="genshin">Genshin Impact</label><br />
+
+        <input type="radio" id="mgs" name="game" />
+        <label for="msg">Metal Gear Series</label><br />
+
+        <input type="radio" id="mario" name="game" />
+        <label for="mario">Super Mario 64</label><br />
+      </fieldset>
+    </form>
+    <br />
+    <h3>Input</h3>
+
+    <label>Text you favorite anything (within 5-10 characters)</label>
+    <input type="text" name="" required minlength="5" maxlength="10" />
+    <br />
+
+    <h3>Checkbox</h3>
+
+    <table cellspace="5">
+      <th>Check the foods you like</th>
+
+      <tr>
+        <td>
+          <label>Mac n cheese</label>
+        </td>
+        <td>
+          <input type="checkbox" name="" id="" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label>Pizza</label>
+        </td>
+        <td>
+          <input type="checkbox" name="" id="" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Hamburguer</label>
+        </td>
+        <td>
+          <input type="checkbox" name="" id="" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Veggies</label>
+        </td>
+        <td>
+          <input type="checkbox" name="" id="" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Sushi</label>
+        </td>
+        <td>
+          <input type="checkbox" name="" id="" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Barbecue</label>
+        </td>
+        <td>
+          <input type="checkbox" name="" id="" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Lasagnha</label>
+        </td>
+        <td>
+          <input type="checkbox" name="" id="" />
+        </td>
+      </tr>
+    </table>
+    <br />
+    <h3>Text area and submit/reset</h3>
+
+    <label>Now tell me something interesting about yourself:</label><br />
+    <textarea id="" name="" rows="10" cols="50"></textarea><br />
+    <input type="submit" />
+    <input type="reset" /><br />
+
+    <h3>Date</h3>
+    <form>
+      <label>Now tell me your birthday:</label><br />
+      <input type="date" id="" name="" />
+    </form>
+    <br />
+    <h3>File</h3>
+
+    <form>
+        <label>Select a file:</label>
+        <input type="file" id="" name="">
+    </form>
+
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
